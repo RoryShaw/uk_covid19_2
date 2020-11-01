@@ -23,7 +23,7 @@ First we load the data from Public Health Wales. Then tell the computer
 to treat ‘Specimen.date’ as a date.
 
 ``` r
-w_cases <- read.csv("~/Desktop/uk_covid19_2/uk_covid19_2/2020-10-24/Rapid COVID-19 surveillance data(1).csv", header=TRUE)
+w_cases <- read.csv("~/Desktop/uk_covid19_2/uk_covid19_2/2020-11-01/Rapid COVID-19 surveillance data(1).csv", header=TRUE)
 w_cases$Specimen.date <- 
   as.Date(w_cases$Specimen.date, format = "%d/%m/%Y")
 ```
